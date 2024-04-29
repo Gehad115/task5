@@ -1,0 +1,45 @@
+
+body{
+    perspective: 700px;
+}
+
+.container{
+    margin: auto;
+    width: 100%;
+    overflow: auto;
+    height: 1000px;
+    padding-top: 80px;
+}
+.sec{
+    float: left;
+    margin-left:115px;
+    transform-style: preserve-3d;
+    width:30%;
+    width: 350px;
+    height: 400px;
+    position: relative;
+    transition: all 2s;
+    margin-bottom:50px;
+    
+}
+.face{
+    z-index: 1;
+    backface-visibility: hidden;
+    box-shadow: 1px 1px 30px 10px rgb(93, 55, 93);
+}
+.back{
+    transform:rotateY(180deg) ;
+    box-shadow: 1px 1px 30px 10px rgb(93, 55, 93);
+}
+.face , .back{
+    position: absolute;
+    width: 350px;
+    height: 400px;
+}
+.sec:hover{
+    transform: rotateY(180deg);
+}
+pre{
+    color: blueviolet;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
